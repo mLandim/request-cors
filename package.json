@@ -2,13 +2,17 @@
   "name": "request-cors",
   "version": "1.2.0",
   "description": "Javascript helper function for HTTP requests dealing with CORS",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "buld": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "request",
     "requests",
+    "requisições",
     "ajax",
     "cors",
     "http",
@@ -18,5 +22,15 @@
     "landim"
   ],
   "author": "Marcelo Landim <marcelolandim85@gmail.com>",
-  "license": "MIT"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mLandim/request-cors.git"
+  },
+  "homepage": "https://github.com/mLandim/request-cors#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "rollup": "^2.47.0"
+  }
 }
