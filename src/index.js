@@ -1,6 +1,6 @@
 const requestCors = (function (){
     
-    // default function
+    // Default function
     function main(method, url, postBodyObject) {
   
         return new Promise (function (resolve, reject) {
@@ -23,18 +23,18 @@ const requestCors = (function (){
     
                     // CORS not supported.
                     request = null
-                    responseObject = { status: 'x', data: 'Invalid connection. (open)' }
+                    responseObject = { status: 'x', data: 'Invalid connection. (XMLHttpRequest open)' }
                     
                     throw responseObject
                 }
     
-                // if request is not null
+                // If request is not null
                 if (request != null) {
     
                     
                     request.withCredentials = true
     
-                    // If any parameters (plain js object) are received, they should be send with the http request 
+                    // Plain js object received -> send with the http request 
                     if (postBodyObject) { 
                         request.send(JSON.stringify(postBodyObject))
                     } else {
@@ -80,7 +80,7 @@ const requestCors = (function (){
                     // Handling erros at network level - https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequestEventTarget/onerror
                     request.onerror = function() {
                         // onerror -> rejects promise 
-                        responseObject = { status: 'x', data: 'Conexão inválida. (onerror)' }
+                        responseObject = { status: 'x', data: 'Invalid connection. (XMLHttpRequest onerror)' }
                         reject(responseObject)
                     }
     
