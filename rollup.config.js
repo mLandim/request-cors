@@ -9,7 +9,7 @@ export default {
         },
         {
             file: 'dist/index.esm.js',
-            format: 'ems'
+            format: 'esm'
         },
         {
             name: 'requestCors',

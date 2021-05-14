@@ -1,15 +1,3 @@
-/**
- * Helper function for http requests with CORS
- * 
- * @function requestCors
- * @author Marcelo Landim <marcelolandim85@gmail.com>
- * @version v1.0.3
- * @date 14/05/2021
- * @param {String} method - HTTP method request, GET or POST
- * @param {String} url 
- * @param {Object} postBodyObject - plain javascript object with POST request's parameters
- * @returns {Promise} - promise result
-*/
 const requestCors = (function (){
     
     // default function
