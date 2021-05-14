@@ -1,0 +1,22 @@
+{
+  "name": "requests-cors",
+  "version": "1.2.0",
+  "description": "Javascript helper function for HTTP requests dealing with CORS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "request",
+    "requests",
+    "ajax",
+    "cors",
+    "http",
+    "XMLHttpRequest",
+    "get",
+    "post",
+    "landim"
+  ],
+  "author": "Marcelo Landim <marcelolandim85@gmail.com>",
+  "license": "MIT"
+}
