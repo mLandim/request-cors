@@ -1,5 +1,5 @@
 {
-  "name": "requests-cors",
+  "name": "request-cors",
   "version": "1.2.0",
   "description": "Javascript helper function for HTTP requests dealing with CORS",
   "main": "index.js",
